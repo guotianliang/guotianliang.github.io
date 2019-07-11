@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-07-11T08:21:41.060Z</updated>
+  <updated>2019-07-11T08:47:02.522Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>vuex的简单介绍及使用</title>
+    <link href="http://yoursite.com/2019/07/11/vuex/"/>
+    <id>http://yoursite.com/2019/07/11/vuex/</id>
+    <published>2019-07-11T08:42:58.000Z</published>
+    <updated>2019-07-11T08:47:02.522Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;vuex的使用&quot;&gt;&lt;a href=&quot;#vuex的使用&quot; class=&quot;headerlink&quot; title=&quot;vuex的使用&quot;&gt;&lt;/a&gt;vuex的使用&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;vuex
+        
+      
+    
+    </summary>
+    
+    
+      <category term="vue" scheme="http://yoursite.com/tags/vue/"/>
+    
+      <category term="vuex" scheme="http://yoursite.com/tags/vuex/"/>
+    
+  </entry>
+  
+  <entry>
     <title>js数组的一些方法</title>
     <link href="http://yoursite.com/2019/07/11/js/"/>
     <id>http://yoursite.com/2019/07/11/js/</id>
     <published>2019-07-11T06:28:45.000Z</published>
-    <updated>2019-07-11T08:21:41.060Z</updated>
+    <updated>2019-07-11T08:25:00.124Z</updated>
     
     <summary type="html">
     

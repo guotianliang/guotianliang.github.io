@@ -4,11 +4,11 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="js数组的一些方法, 下个雨后">
-    <meta name="description" content="js常用的字符串的操作reduce//排序  将排序好的数组，除前十项外，后面项相加合成一个
-var  sortlist = function(data){
-  var _arr = data.sort(function(a,b){
-   ">
+    <meta name="keywords" content="vuex的简单介绍及使用, 下个雨后">
+    <meta name="description" content="vuex的使用vuex 是一个专门为vue.js应用程序开发的状态管理模式。vuex中，有默认的五种基本的对象：
+
+state：存储状态（变量）
+getters：对数据获取之前的再次编译，可以理解为state的计算属性。我们在组件中使用 $">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +16,7 @@ var  sortlist = function(data){
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>js数组的一些方法 | 下个雨后</title>
+    <title>vuex的简单介绍及使用 | 下个雨后</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -270,7 +270,7 @@ var  sortlist = function(data){
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        js数组的一些方法
+                        vuex的简单介绍及使用
                     </div>
                 </div>
             </div>
@@ -381,8 +381,12 @@ var  sortlist = function(data){
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/js/" target="_blank">
-                                <span class="chip bg-color">js</span>
+                            <a href="/tags/vue/" target="_blank">
+                                <span class="chip bg-color">vue</span>
+                            </a>
+                        
+                            <a href="/tags/vuex/" target="_blank">
+                                <span class="chip bg-color">vuex</span>
                             </a>
                         
                     </div>
@@ -412,48 +416,162 @@ var  sortlist = function(data){
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="js常用的字符串的操作"><a href="#js常用的字符串的操作" class="headerlink" title="js常用的字符串的操作"></a>js常用的字符串的操作</h2><h3 id="reduce"><a href="#reduce" class="headerlink" title="reduce"></a>reduce</h3><pre class="line-numbers language-js"><code class="language-js"><span class="token comment" spellcheck="true">//排序  将排序好的数组，除前十项外，后面项相加合成一个</span>
-<span class="token keyword">var</span>  sortlist <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">{</span>
-  <span class="token keyword">var</span> _arr <span class="token operator">=</span> data<span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>b<span class="token punctuation">)</span><span class="token punctuation">{</span>
-    <span class="token keyword">return</span> a<span class="token punctuation">.</span>energyReal <span class="token operator">&lt;</span> b<span class="token punctuation">.</span>energyReal  <span class="token operator">?</span> <span class="token number">1</span> <span class="token punctuation">:</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token keyword">var</span> _eleven <span class="token operator">=</span> _arr<span class="token punctuation">.</span><span class="token function">splice</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span>_arr<span class="token punctuation">.</span>length<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">reduce</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>total<span class="token punctuation">,</span>item<span class="token punctuation">)</span><span class="token punctuation">{</span>
-    total<span class="token punctuation">.</span>item<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    total<span class="token punctuation">.</span>energyItemName<span class="token operator">=</span><span class="token string">"其他"</span><span class="token punctuation">;</span>
-    total<span class="token punctuation">.</span>energyReal <span class="token operator">+</span><span class="token operator">=</span> item<span class="token punctuation">.</span>energyReal<span class="token punctuation">;</span>
-    total<span class="token punctuation">.</span>energyPlan <span class="token operator">+</span><span class="token operator">=</span> item<span class="token punctuation">.</span>energyPlan<span class="token punctuation">;</span>
-    total<span class="token punctuation">.</span>realOccupyPlanRatio <span class="token operator">+</span><span class="token operator">=</span> item<span class="token punctuation">.</span>realOccupyPlanRatio<span class="token punctuation">;</span>
-    total<span class="token punctuation">.</span>realOccupyTotalRatio <span class="token operator">+</span><span class="token operator">=</span> item<span class="token punctuation">.</span>realOccupyTotalRatio<span class="token punctuation">;</span>
-    <span class="token keyword">return</span> total
-  <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span>item<span class="token punctuation">:</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>energyReal<span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">,</span>energyPlan<span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">,</span>realOccupyPlanRatio<span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">,</span>realOccupyTotalRatio<span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  _arr<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>_eleven<span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token keyword">return</span> _arr<span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="数组展开"><a href="#数组展开" class="headerlink" title="数组展开"></a>数组展开</h3><pre class="line-numbers language-js"><code class="language-js"><span class="token comment" spellcheck="true">//运用递归  和  reduce</span>
-<span class="token keyword">var</span> flatten <span class="token operator">=</span> <span class="token punctuation">(</span>arr<span class="token punctuation">,</span> depth <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span>
-  depth <span class="token operator">!=</span> <span class="token number">0</span>
-    <span class="token operator">?</span> arr<span class="token punctuation">.</span><span class="token function">reduce</span><span class="token punctuation">(</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> v<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> a<span class="token punctuation">.</span><span class="token function">concat</span><span class="token punctuation">(</span>Array<span class="token punctuation">.</span><span class="token function">isArray</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span> <span class="token operator">?</span> <span class="token function">flatten</span><span class="token punctuation">(</span>v<span class="token punctuation">,</span> depth <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">:</span> v<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-    <span class="token punctuation">:</span> arr<span class="token punctuation">.</span><span class="token function">reduce</span><span class="token punctuation">(</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> v<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> a<span class="token punctuation">.</span><span class="token function">concat</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token function">flatten</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment" spellcheck="true">//输出 [1, 2, 3, 4, 5, 6, 7, 8]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="短路运算符"><a href="#短路运算符" class="headerlink" title="短路运算符"></a>短路运算符</h3><p>我们知道逻辑与<code>&amp;&amp;</code>与逻辑或<code>||</code>是短路运算符，短路运算符就是从左到右的运算中前者满足要求，就不再执行后者了；</p>
+                <h2 id="vuex的使用"><a href="#vuex的使用" class="headerlink" title="vuex的使用"></a>vuex的使用</h2><pre><code>vuex 是一个专门为vue.js应用程序开发的状态管理模式。</code></pre><p><strong>vuex中，有默认的五种基本的对象：</strong></p>
 <ul>
-<li><code>&amp;amp;&amp;amp;</code>为取假运算，从左到右依次判断，如果遇到一个假值，就返回假值，以后不再执行，否则返回最后一个真值</li>
-<li><code>||</code>为取真运算，从左到右依次判断，如果遇到一个真值，就返回真值，以后不再执行，否则返回最后一个假值</li>
+<li>state：存储状态（变量）</li>
+<li>getters：对数据获取之前的再次编译，可以理解为state的计算属性。我们在组件中使用 $sotre.getters.fun()</li>
+<li>mutations：修改状态，并且是同步的。在组件中使用$store.commit(‘’,params)。这个和我们组件中的自定义事件类似。</li>
+<li>actions：异步操作。在组件中使用是$store.dispath(‘’)</li>
+<li>modules：store的子模块，为了开发大型项目，方便状态管理而使用的。这里我们就不解释了，用起来和上面的一样。</li>
 </ul>
-<pre class="line-numbers language-js"><code class="language-js"><span class="token keyword">let</span> variable1
-<span class="token keyword">let</span> variable2 <span class="token operator">=</span> variable1  <span class="token operator">||</span> <span class="token string">'foo'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>如果variable1是真值就直接返回了，后面短路就不会被返回了，如果为假值，则会返回后面的<code>foo</code>。</p>
-<p>也可以用来进行简单的判断，取代冗长的<code>if</code>语句：</p>
-<pre class="line-numbers language-js"><code class="language-js"><span class="token keyword">let</span> variable <span class="token operator">=</span> param <span class="token operator">&amp;&amp;</span> param<span class="token punctuation">.</span>prop<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>如果<code>param</code>如果为真值则返回<code>param.prop</code>属性，否则返回<code>param</code>这个假值，这样在某些地方防止<code>param</code>为<code>undefined</code>的时候还取其属性造成报错</p>
-<h3 id="字符串比较时间先后"><a href="#字符串比较时间先后" class="headerlink" title="字符串比较时间先后"></a>字符串比较时间先后</h3><pre class="line-numbers language-js"><code class="language-js"><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token string">"2014-08-08"</span><span class="token punctuation">;</span>
-<span class="token keyword">var</span> b <span class="token operator">=</span> <span class="token string">"2014-09-09"</span><span class="token punctuation">;</span>
+<pre><code>vue init webpack app
+cd app/
+npm run dev
+npm install vuex --save</code></pre><p>在store.js文件中，引入vuex并且使用vuex，这里注意我的变量名是大写Vue和Vuex　 </p>
+<pre><code>import Vue from &#39;vue&#39;
+import Vuex from &#39;vuex&#39;
 
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token operator">></span>b<span class="token punctuation">,</span> a<span class="token operator">&lt;</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// false true</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"21:00"</span><span class="token operator">&lt;</span><span class="token string">"09:10"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">// false</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"21:00"</span><span class="token operator">&lt;</span><span class="token string">"9:10"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment" spellcheck="true">// true   时间形式注意补0</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>因为字符串比较大小是按照字符串从左到右每个字符的<code>charCode</code>来的，但所以特别要注意时间形式注意补0</p>
+Vue.use(Vuex)
 
+const state = {
+    count: 0
+}
+
+export default new Vuex.Store({
+    state
+})</code></pre><p>接下来，在main.js中引入store </p>
+<pre><code>import Vue from &#39;vue&#39;
+import App from &#39;./App&#39;
+import router from &#39;./router&#39;
+import store from &#39;./vuex/store&#39; // 引入store
+Vue.config.productionTip = false
+
+/* eslint-disable no-new */
+new Vue({
+    el: &#39;#app&#39;,
+    router,
+    store,
+    components: { App },
+    template: &#39;&lt;App/&gt;&#39;
+})</code></pre><p><strong>在组件中使用count</strong></p>
+<pre><code>&lt;template&gt;
+  &lt;div class=&quot;hello&quot;&gt;
+    &lt;h3&gt;{{$store.state.count}}&lt;/h3&gt;
+  &lt;/div&gt;
+&lt;/template&gt;</code></pre><h4 id="1-Vuex-Store中使用mutations"><a href="#1-Vuex-Store中使用mutations" class="headerlink" title="1.Vuex.Store中使用mutations"></a>1.Vuex.Store中使用<strong>mutations</strong></h4><pre><code>/**
+ * mutations 里面放置的是我们操作state对象属性的方法
+ */
+const mutations = {
+    mutationsAddCount(state, n = 0) {
+        return (state.count += n)
+    },
+    mutationsReduceCount(state, n = 0) {
+        return (state.count -= n)
+    }
+}
+export default new Vuex.Store({
+    state,
+    mutations
+}) </code></pre><p>在helloWorld.vue中，使用这个方法 （就和自定义事件非常相似 ）</p>
+<pre><code>&lt;template&gt;
+  &lt;div class=&quot;hello&quot;&gt;
+    &lt;h3&gt;{{$store.state.count}}&lt;/h3&gt;
+    &lt;div&gt;
+      &lt;button @click=&quot;handleAddClick(10)&quot;&gt;增加&lt;/button&gt;
+      &lt;button @click=&quot;handleReduceClick(10)&quot;&gt;减少&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+methods: {
+    handleAddClick(n){
+      this.$store.commit(&#39;mutationsAddCount&#39;,n);
+    },
+    handleReduceClick(n){
+      this.$store.commit(&#39;mutationsReduceCount&#39;,n);
+    }
+  }</code></pre><h4 id="2-actions是异步操作"><a href="#2-actions是异步操作" class="headerlink" title="2.actions是异步操作"></a>2.actions是异步操作</h4><p>创建actions对象，并且使用</p>
+<p>这里我在两个方法中使用了两个不同的参数，一个是context，它是一个和store对象具有相同对象属性的参数。在第二个函数中，我是直接使用了这个对象的commit的方法。</p>
+<pre><code>const actions = {
+    actionsAddCount(context, n = 0) {
+        console.log(context)
+        return context.commit(&#39;mutationsAddCount&#39;, n)
+    },
+    actionsReduceCount({ commit }, n = 0) {
+        return commit(&#39;mutationsReduceCount&#39;, n)
+    }
+}
+export default new Vuex.Store({
+    state,
+    mutations,
+    actions
+})</code></pre><p>在helloWorld.vue中  在methods中，增加两个方法，使用dispath来触发 </p>
+<pre><code>&lt;div&gt;异步操作&lt;/div&gt;
+  &lt;div&gt;
+    &lt;button @click=&quot;handleActionsAdd(10)&quot;&gt;异步增加&lt;/button&gt;
+    &lt;button @click=&quot;handleActionsReduce(10)&quot;&gt;异步减少&lt;/button&gt;
+  &lt;/div&gt;
+  handleActionsAdd(n){
+      this.$store.dispatch(&#39;actionsAddCount&#39;,n)
+    },
+    handleActionsReduce(n){
+      this.$store.dispatch(&#39;actionsReduceCount&#39;,n)
+    }</code></pre><h4 id="3-最后就是getters"><a href="#3-最后就是getters" class="headerlink" title="3.最后就是getters"></a>3.最后就是getters</h4><p>我们一般使用getters来获取我们的state，因为它算是state的一个计算属性 </p>
+<pre><code>const getters = {
+    getterCount(state, n = 0) {
+        return (state.count += n)
+    }
+}
+export default new Vuex.Store({
+    state,
+    mutations,
+    actions,
+    getters
+})
+
+&lt;h4&gt;{{count}}&lt;/h4&gt;
+const getters = {
+    getterCount(state) {
+        return (state.count += 10)
+    }
+}</code></pre><h4 id="4-mapState-mapMutations-mapActions-mapGetters"><a href="#4-mapState-mapMutations-mapActions-mapGetters" class="headerlink" title="4.mapState, mapMutations, mapActions, mapGetters"></a>4.mapState, mapMutations, mapActions, mapGetters</h4><p>vuex官方给了我们一个更简单的方式来使用vuex， 也就是 {mapState, mapMutations, mapActions, mapGetters} </p>
+<pre><code>&lt;script&gt;
+import {mapState, mapMutations, mapActions, mapGetters} from &#39;vuex&#39;
+export default {
+  name: &#39;HelloWorld&#39;,
+  data () {
+    return {
+      msg: &#39;Welcome to Your Vue.js App&#39;
+    }
+  },
+  methods: {
+    ...mapMutations({
+      handleAddClick: &#39;mutationsAddCount&#39;,
+      handleReduceClick: &#39;mutationsReduceCount&#39;
+    }),
+    ...mapActions({
+      handleActionsAdd: &#39;actionsAddCount&#39;,
+      handleActionsReduce: &#39;actionsReduceCount&#39;
+    })
+    // handleAddClick(n){
+    //   this.$store.commit(&#39;mutationsAddCount&#39;,n);
+    // },
+    // handleReduceClick(n){
+    //   this.$store.commit(&#39;mutationsReduceCount&#39;,n);
+    // },
+    // handleActionsAdd(n){
+    //   this.$store.dispatch(&#39;actionsAddCount&#39;,n)
+    // },
+    // handleActionsReduce(n){
+    //   this.$store.dispatch(&#39;actionsReduceCount&#39;,n)
+    // }
+  },
+  computed: {
+    count(){
+      return this.$store.getters.getterCount
+    }
+  }
+}
+&lt;/script&gt;</code></pre>
             </div>
             <hr/>
 
@@ -611,9 +729,9 @@ console<span class="token punctuation">.</span><span class="token function">log<
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《js数组的一些方法》
+                    《vuex的简单介绍及使用》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/07/11/js/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/07/11/vuex/" property="cc:attributionName"
                rel="cc:attributionURL">
                 郭天亮
             </a> 采用
@@ -653,9 +771,10 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2019/07/11/vuex/">
                     <div class="card-image">
@@ -676,9 +795,9 @@ getters：对数据获取之前的再次编译，可以理解为state的计算�
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-11
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-11
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-user fa-fw"></i>
@@ -687,6 +806,7 @@ getters：对数据获取之前的再次编译，可以理解为state的计算�
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -709,26 +829,27 @@ getters：对数据获取之前的再次编译，可以理解为state的计算�
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/07/10/hightchart/">
+                <a href="/2019/07/11/js/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="使用hightchart遇到的一些问题及解决">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="js数组的一些方法">
                         
-                        <span class="card-title">使用hightchart遇到的一些问题及解决</span>
+                        <span class="card-title">js数组的一些方法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            使用hightchart遇到的一些问题及解决
-需求：环形图与表格联动联动后，hover表格环形图tips不消失//联动的代码 移动到表格时使其触发
- chart.tooltip.refresh(chart.series[0].points[
+                            js常用的字符串的操作reduce//排序  将排序好的数组，除前十项外，后面项相加合成一个
+var  sortlist = function(data){
+  var _arr = data.sort(function(a,b){
+   
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-10
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-11
                             </span>
                         <span class="publish-author">
                             
@@ -741,8 +862,8 @@ getters：对数据获取之前的再次编译，可以理解为state的计算�
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/hightchart/" target="_blank">
-                        <span class="chip bg-color">hightchart</span>
+                    <a href="/tags/js/" target="_blank">
+                        <span class="chip bg-color">js</span>
                     </a>
                     
                 </div>
