@@ -6,10 +6,8 @@
     <meta charset="utf-8">
     <meta name="keywords" content="使用hightchart遇到的一些问题及解决, 下个雨后">
     <meta name="description" content="使用hightchart遇到的一些问题及解决
-Quick StartCreate a new post$ hexo new &#34;My New Post&#34;
-More info: Writing
-Run server$ hexo server
-M">
+需求：环形图与表格联动联动后，hover表格环形图tips不消失//联动的代码 移动到表格时使其触发
+ chart.tooltip.refresh(chart.series[0].points[">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -414,14 +412,10 @@ M">
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>使用hightchart遇到的一些问题及解决</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<h2 id="需求：环形图与表格联动"><a href="#需求：环形图与表格联动" class="headerlink" title="需求：环形图与表格联动"></a>需求：环形图与表格联动</h2><h3 id="联动后，hover表格环形图tips不消失"><a href="#联动后，hover表格环形图tips不消失" class="headerlink" title="联动后，hover表格环形图tips不消失"></a>联动后，hover表格环形图tips不消失</h3><pre class="line-numbers language-bash"><code class="language-bash">//联动的代码 移动到表格时使其触发
+ chart.tooltip.refresh<span class="token punctuation">(</span>chart.series<span class="token punctuation">[</span>0<span class="token punctuation">]</span>.points<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+ //让tips消失:找到环形图的tips盒子，鼠标移开时让其透明度为0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h3 id="图表自适应问题"><a href="#图表自适应问题" class="headerlink" title="图表自适应问题"></a>图表自适应问题</h3><pre class="line-numbers language-bash"><code class="language-bash"> chart.reflow<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
             </div>
             <hr/>
@@ -640,10 +634,8 @@ M">
                     <div class="summary block-with-text">
                         
                             使用hightchart遇到的一些问题及解决
-Quick StartCreate a new post$ hexo new "My New Post"
-More info: Writing
-Run server$ hexo server
-M
+需求：环形图与表格联动联动后，hover表格环形图tips不消失//联动的代码 移动到表格时使其触发
+ chart.tooltip.refresh(chart.series[0].points[
                         
                     </div>
                     <div class="publish-info">
@@ -690,10 +682,8 @@ M
                     <div class="summary block-with-text">
                         
                             使用hightchart遇到的一些问题及解决
-Quick StartCreate a new post$ hexo new "My New Post"
-More info: Writing
-Run server$ hexo server
-M
+需求：环形图与表格联动联动后，hover表格环形图tips不消失//联动的代码 移动到表格时使其触发
+ chart.tooltip.refresh(chart.series[0].points[
                         
                     </div>
                     <div class="publish-info">
