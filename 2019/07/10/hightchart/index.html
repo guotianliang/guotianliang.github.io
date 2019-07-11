@@ -412,10 +412,10 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>使用hightchart遇到的一些问题及解决</p>
-<h2 id="需求：环形图与表格联动"><a href="#需求：环形图与表格联动" class="headerlink" title="需求：环形图与表格联动"></a>需求：环形图与表格联动</h2><h3 id="联动后，hover表格环形图tips不消失"><a href="#联动后，hover表格环形图tips不消失" class="headerlink" title="联动后，hover表格环形图tips不消失"></a>联动后，hover表格环形图tips不消失</h3><pre class="line-numbers language-bash"><code class="language-bash">//联动的代码 移动到表格时使其触发
- chart.tooltip.refresh<span class="token punctuation">(</span>chart.series<span class="token punctuation">[</span>0<span class="token punctuation">]</span>.points<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
- //让tips消失:找到环形图的tips盒子，鼠标移开时让其透明度为0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h3 id="图表自适应问题"><a href="#图表自适应问题" class="headerlink" title="图表自适应问题"></a>图表自适应问题</h3><pre class="line-numbers language-bash"><code class="language-bash"> chart.reflow<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="需求：环形图与表格联动"><a href="#需求：环形图与表格联动" class="headerlink" title="需求：环形图与表格联动"></a>需求：环形图与表格联动</h2><h3 id="联动后，hover表格环形图tips不消失"><a href="#联动后，hover表格环形图tips不消失" class="headerlink" title="联动后，hover表格环形图tips不消失"></a>联动后，hover表格环形图tips不消失</h3><pre class="line-numbers language-js"><code class="language-js"><span class="token comment" spellcheck="true">//联动的代码 移动到表格时使其触发</span>
+ chart<span class="token punctuation">.</span>tooltip<span class="token punctuation">.</span><span class="token function">refresh</span><span class="token punctuation">(</span>chart<span class="token punctuation">.</span>series<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>points<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">//让tips消失:找到环形图的tips盒子，鼠标移开时让其透明度为0</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h3 id="图表自适应问题"><a href="#图表自适应问题" class="headerlink" title="图表自适应问题"></a>图表自适应问题</h3><pre class="line-numbers language-js"><code class="language-js"> chart<span class="token punctuation">.</span><span class="token function">reflow</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
             </div>
             <hr/>
@@ -578,7 +578,7 @@
                 </span> 由
             <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/07/10/hightchart/" property="cc:attributionName"
                rel="cc:attributionURL">
-                小雨佳
+                郭天亮
             </a> 采用
             <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh">
                 知识共享署名 4.0 国际许可协议
@@ -692,7 +692,7 @@ var  sortlist = function(data){
                         <span class="publish-author">
                             
                             <i class="fa fa-user fa-fw"></i>
-                            小雨佳
+                            郭天亮
                             
                         </span>
                     </div>
