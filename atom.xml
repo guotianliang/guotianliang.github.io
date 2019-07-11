@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>下个雨后</title>
+  
+  <subtitle>我的前端之旅</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://aiyujia.com/"/>
+  <updated>2019-07-11T02:41:29.497Z</updated>
+  <id>http://aiyujia.com/</id>
+  
+  <author>
+    <name>小雨佳</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用hightchart遇到的一些问题及解决</title>
+    <link href="http://aiyujia.com/2019/07/10/hello-world/"/>
+    <id>http://aiyujia.com/2019/07/10/hello-world/</id>
+    <published>2019-07-10T09:31:11.059Z</published>
+    <updated>2019-07-11T02:41:29.497Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;使用hightchart遇到的一些问题及解决&lt;/p&gt;
+&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3
+        
+      
+    
+    </summary>
+    
+    
+      <category term="hightchart" scheme="http://aiyujia.com/tags/hightchart/"/>
+    
+  </entry>
+  
+</feed>
