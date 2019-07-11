@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-07-11T08:47:02.522Z</updated>
+  <updated>2019-07-11T08:51:07.012Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,17 +21,11 @@
     <link href="http://yoursite.com/2019/07/11/vuex/"/>
     <id>http://yoursite.com/2019/07/11/vuex/</id>
     <published>2019-07-11T08:42:58.000Z</published>
-    <updated>2019-07-11T08:47:02.522Z</updated>
+    <updated>2019-07-11T08:51:07.012Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;vuex的使用&quot;&gt;&lt;a href=&quot;#vuex的使用&quot; class=&quot;headerlink&quot; title=&quot;vuex的使用&quot;&gt;&lt;/a&gt;vuex的使用&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;vuex
-        
-      
+      &lt;h2 id=&quot;vuex的使用&quot;&gt;&lt;a href=&quot;#vuex的使用&quot; class=&quot;headerlink&quot; title=&quot;vuex的使用&quot;&gt;&lt;/a&gt;vuex的使用&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;vuex 是一个专门为vue.js应用程序开发的状态管理模式。&lt;/code&gt;&lt;/pre&gt;
     
     </summary>
     
