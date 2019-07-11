@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-07-11T04:04:48.561Z</updated>
+  <updated>2019-07-11T06:54:18.700Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,9 +17,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>js数组的一些方法</title>
+    <link href="http://yoursite.com/2019/07/11/js/"/>
+    <id>http://yoursite.com/2019/07/11/js/</id>
+    <published>2019-07-11T06:28:45.000Z</published>
+    <updated>2019-07-11T06:54:18.700Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;js常用的字符串的操作&quot;&gt;&lt;a href=&quot;#js常用的字符串的操作&quot; class=&quot;headerlink&quot; title=&quot;js常用的字符串的操作&quot;&gt;&lt;/a&gt;js常用的字符串的操作&lt;/h2&gt;&lt;h3 id=&quot;reduce&quot;&gt;&lt;a href=&quot;#reduce&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="js" scheme="http://yoursite.com/tags/js/"/>
+    
+      <category term="vue" scheme="http://yoursite.com/tags/vue/"/>
+    
+  </entry>
+  
+  <entry>
     <title>使用hightchart遇到的一些问题及解决</title>
-    <link href="http://yoursite.com/2019/07/10/hello-world/"/>
-    <id>http://yoursite.com/2019/07/10/hello-world/</id>
+    <link href="http://yoursite.com/2019/07/10/hightchart/"/>
+    <id>http://yoursite.com/2019/07/10/hightchart/</id>
     <published>2019-07-10T09:31:11.059Z</published>
     <updated>2019-07-11T04:04:48.561Z</updated>
     

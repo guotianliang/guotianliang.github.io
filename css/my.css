@@ -1,1 +1,4 @@
 /* Here is your custom css styles. */
+.bg-cover:before, .bg-cover:after{
+display:none
+}
